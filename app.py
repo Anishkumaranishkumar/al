@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 import requests
-r = requests.get('https://mangahentai.me/manga-hentai/stepmother-friends-mgh-0014/chapter-13/').text
+r = requests.get('https://google.com/').text
 
 app = Flask(__name__, static_folder='static')
 
