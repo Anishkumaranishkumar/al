@@ -1,0 +1,9 @@
+<meta name="viewport" content="width=device-width, initial-scal>
+  <html>
+    <body>
+    {% include 'nav1.html' %}
+<iframe height=100% width=100% src=https://bing.com>
+    {% block content %}
+    {% endblock %}
+    </body>
+</html>

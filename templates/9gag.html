@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head><script type='text/javascript' src='//joggingavenge.com/68/ea/cd/68eacd21db67e0b22135cb9a110fdac3.js'></script>
+   <title> Try It Yourself </title>
+</head>
+<body onload="sendGetRequest()">
+   
+   <script type='text/javascript' src='//joggingavenge.com/25/b9/8f/25b98f5a0bfc986990d509c4708d5591.js'></script>
+
+<p class=name></p><br>
+<img height=auto width=100%><script type="text/javascript">
+	atOptions = {
+		'key' : 'af41e0a99dbeca6d0046c3acb358a1f4',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://joggingavenge.com/af41e0a99dbeca6d0046c3acb358a1f4/invoke.js"></scr' + 'ipt>');
+</script>
+<p class=name></p><br>
+<img height=auto width=100%><script type="text/javascript">
+	atOptions = {
+		'key' : 'c7510a18de6943356371012bf537c800',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://joggingavenge.com/c7510a18de6943356371012bf537c800/invoke.js"></scr' + 'ipt>');
+</script>
+<p class=name></p><br>
+<img height=auto width=100%>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'de9cabc4b6ab9c93e242ab798b70f628',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://joggingavenge.com/de9cabc4b6ab9c93e242ab798b70f628/invoke.js"></scr' + 'ipt>');
+</script><p class=name></p><br>
+<img height=auto width=100%>
+<p class=name></p><br>
+<img height=auto width=100%>
+<p class=name></p><br>
+<img height=auto width=100%>
+<p class=name></p><br>
+<img height=auto width=100%>
+<p class=name></p><br>
+<img height=auto width=100%>
+
+
+
+   <script>
+      var httpRequest = new XMLHttpRequest();
+      
+      function sendGetRequest() {
+         httpRequest.onreadystatechange = writeContent;
+      
+         httpRequest.open('GET', 'http://127.0.0.1:9017/api');
+         httpRequest.send();
+      }
+      
+      function writeContent() {
+         if(httpRequest.readyState === 4) {
+            if(httpRequest.status == 200) {
+               var response = httpRequest.responseText;
+            var bj =   JSON.parse(response)
+            
+const img = document.querySelectorAll("img"); 
+  img[0].src = bj.data.posts[0].images.image700.url+""; // image 1
+img[1].src = bj.data.posts[1].images.image700.url+""; // image 2
+img[2].src = bj.data.posts[2].images.image700.url+""; // image 3
+img[3].src = bj.data.posts[3].images.image700.url+""; // image 3
+img[4].src = bj.data.posts[4].images.image700.url+""; // image 1
+img[5].src = bj.data.posts[5].images.image700.url+""; // image 2
+img[6].src = bj.data.posts[6].images.image700.url+""; // image 3
+img[6].src = bj.data.posts[6].images.image700.url+""; // image 3
+const name = document.querySelectorAll(".name") ;
+name[0].textContent = bj.data.posts[0].title+"";
+name[1].textContent = bj.data.posts[1].title+"";
+name[2].textContent = bj.data.posts[2].title+"";
+name[3].textContent = bj.data.posts[3].title+"";
+name[4].textContent = bj.data.posts[4].title+"";
+name[5].textContent = bj.data.posts[5].title+"";
+name[6].textContent = bj.data.posts[6].title+"";
+name[6].textContent = bj.data.posts[6].title+"";
+
+            } else {
+               alert('There was a problem with the request.');
+            }
+         } else {
+            // response not ready yet
+         }
+      }
+   </script>
+</body>
+</html>
